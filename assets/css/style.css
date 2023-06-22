@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*VARIÁVEIS*/
+:root {
+    --fonte01: 'Montserrat', sans-serif;
+    --fonte02: 'Open Sans', sans-serif;
+    --corbase: #0E0D40;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--fonte02);
+    font-size: 2rem;
+    color: var(--corbase);
+    background-color: white;
+}
+
+.imgbg {
+    background-image: url('../imagens/mainbg.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 16px rgba(0, 0, 0, 0.236);
+}
+
+.maincontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20 px;
+    color:white;
+}
+
+.whitecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.sessao {
+    height: 100vh;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 200px 20px 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#menu a {
+    color: var(--corbase);
+    text-decoration: none;
+}
+
+/*TÍTULOS*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fonte01);
+}
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 5.5rem;
+}
+h3 {
+    font-size: 5rem;
+}
+h4 {
+    font-size: 4.5rem;
+}
+h5 {
+    font-size: 4rem;
+}
+h6 {
+    font-size: 3.5rem;
+}
+
+
