@@ -30,27 +30,38 @@ a {
 }
 
 /*TÍTULOS*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fonte01);
 }
+
 h1 {
     font-size: 8rem;
     text-transform: uppercase;
 }
+
 h2 {
     font-size: 6rem;
     text-transform: uppercase;
-    padding-bottom: 3rem;  
+    padding-bottom: 3rem;
 }
+
 h3 {
     font-size: 5rem;
 }
+
 h4 {
     font-size: 4.5rem;
 }
+
 h5 {
     font-size: 4rem;
 }
+
 h6 {
     font-size: 3.5rem;
 }
@@ -64,7 +75,7 @@ h6 {
     max-width: 120rem;
     margin: 0 auto;
     padding: 1.5rem 2rem;
-    color:white;
+    color: white;
 }
 
 .whitecontainer {
@@ -85,24 +96,25 @@ h6 {
 
 /*MENU*/
 #menu {
-   background-color: white;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid var(--cinza01);
 }
+
 #menu div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 2rem;    
+    padding: 2rem;
     max-width: 120rem;
     background-color: white;
 }
 
-#menu h1{
+#menu h1 {
     font-size: 2.3rem;
 }
 
@@ -110,7 +122,7 @@ h6 {
     color: var(--corbase);
 }
 
-#menu ul a{
+#menu ul a {
     list-style-type: none;
     padding-bottom: 0.3rem;
     margin: 1rem;
@@ -127,7 +139,8 @@ h6 {
 
 #menu ul li a:hover {
     color: var(--azul01);
-    border-bottom: 0.2rem solid var(--laranja01);
+    border-bottom: 0.35rem solid var(--laranja01);
+    transition: 0.2s ease-in-out;
 }
 
 /*SESSÃO 1*/
@@ -137,6 +150,7 @@ h6 {
     align-items: center;
     height: 100vh;
 }
+
 #intro-box-um {
     max-width: 450px;
     padding-right: 2rem;
@@ -152,12 +166,13 @@ h6 {
     padding-left: 2rem;
     text-align: left;
 }
+
 #intro-box-dois img {
     max-width: 100%;
     height: auto;
 }
 
-#ses-top3 {
+#ses-top3-1 {
     display: flex;
     align-items: center;
     height: 100vh;
@@ -166,7 +181,54 @@ h6 {
     text-align: center;
 }
 
-#top3 p{
+#top3-1 p {
     padding-bottom: 4rem;
 }
 
+#top3-2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    text-align: left;
+    counter-reset: grid-counter;
+}
+
+.grid-description {
+    padding-bottom: 10rem;
+}
+
+.grid h3 {
+    position: relative;
+    font-size: 3rem;
+    padding-left: 7rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before {
+    position: absolute;
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+#gallery {
+    
+}
+
+#rec-jobs {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
