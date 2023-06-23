@@ -60,7 +60,7 @@ h6 {
 .maincontainer {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 10rem 2rem;
+    padding: 1.5rem 2rem;
     color:white;
 }
 
@@ -82,16 +82,21 @@ h6 {
 
 /*MENU*/
 #menu {
-    margin: 0 auto;
-    background-color: white;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+   background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid var(--cinza01);
+}
+#menu div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;    
+    max-width: 120rem;
+    background-color: white;
 }
 
 #menu h1{
@@ -119,7 +124,38 @@ h6 {
 
 #menu ul li a:hover {
     color: var(--azul01);
-    border-bottom: 0.2rem solid var(--laranja01);
-    transition: all 0.15s;
+    border-bottom: 0.1rem solid var(--laranja01);
+    transition: all 0.3s;
+}
+
+/*SESSÃO 1*/
+#ses-um {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+#s-um-box-um {
+    width: 450px;
+    padding-right: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+#s-um-box-um h2 {
+    font-size: 6rem;
+    padding-bottom: 1rem;
+}
+#s-um-box-um p {
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+#s-um-box-dois {
+    padding-left: 2rem;
+    text-align: left;
+}
+#s-um-box-dois img {
+    max-width: 100%;
+    height: auto;
 }
 
