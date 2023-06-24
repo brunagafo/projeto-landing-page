@@ -74,14 +74,14 @@ h6 {
 .maincontainer {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 4rem 2rem;
     color: white;
 }
 
 .whitecontainer {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 4rem 2rem;
     background-color: white;
 }
 
@@ -175,7 +175,7 @@ h6 {
 #ses-top3-1 {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 60rem;
     font-size: 2.1rem;
     text-align: center;
@@ -187,7 +187,8 @@ h6 {
 
 #top3-2 {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     height: 100vh;
 }
@@ -195,7 +196,7 @@ h6 {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    gap: 2rem;
     text-align: left;
     counter-reset: grid-counter;
 }
@@ -222,13 +223,19 @@ h6 {
     transform: rotate(5deg);
 }
 
-#gallery {
-    
+.gallery-img img{
+   width: 90%;
+   height: 90%;
+   max-width: 36rem;
+   max-height: 36rem;
+   object-fit: cover;
+   overflow: hidden;
 }
 
 #rec-jobs {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     height: 100vh;
 }
