@@ -237,8 +237,6 @@ h6 {
     padding-bottom: 4rem;
 }
 
-
-
 .gallery-img {
     overflow: hidden;
 }
@@ -267,6 +265,7 @@ h6 {
 #ses-pricing {
     display: flex;
     height: 100vh;
+    max-width: 60rem;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 3rem;
