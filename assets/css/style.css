@@ -10,6 +10,7 @@
     --corbase: #0E0D40;
     --azul01: #0e0d40b8;
     --cinza01: lightgray;
+    --cinza02: rgb(236, 233, 233);
     --laranja01: #ff7300;
 }
 
@@ -186,7 +187,7 @@ h6 {
     padding-bottom: 4rem;
 }
 
-#top3-2 {
+.top3-2 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -247,4 +248,48 @@ h6 {
     flex-wrap: nowrap;
     justify-content: center;
     height: 100vh;
+}
+
+#ses-pricing {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 3rem;
+}
+
+#pricing {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#responsive-table {
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    padding: 1rem;
+    text-align: center;
+    font-style: italic;
+}
+
+table td, table th {
+    white-space: nowrap;
+    border: 0.2rem solid var(--cinza02);
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+table thead, table tfoot {
+    padding: 0.8rem;
+    background-color: var(--cinza02);
+    text-align: center;
 }
