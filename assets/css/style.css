@@ -79,6 +79,10 @@ h6 {
     color: white;
 }
 
+.maincontainer h2, .whitecontainer h2 {
+    padding: 5rem 0;
+}
+
 .whitecontainer {
     max-width: 120rem;
     margin: 0 auto;
@@ -224,6 +228,16 @@ h6 {
     left: 0;
     transform: rotate(5deg);
 }
+
+#gallery h2 {
+    padding-bottom: 2rem; 
+}
+
+#gallery p {
+    padding-bottom: 4rem;
+}
+
+
 
 .gallery-img {
     overflow: hidden;
