@@ -154,26 +154,27 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh;
 }
 
-#intro-box-um {
+.box-um {
     max-width: 450px;
     padding-right: 2rem;
     text-align: left;
 }
 
-#intro-box-um p {
+.box-um p {
     text-transform: capitalize;
     line-height: 1.5;
 }
 
-#intro-box-dois {
+.box-dois {
+    width: 60rem;
     padding-left: 2rem;
     text-align: left;
 }
 
-#intro-box-dois img {
+.box-dois img {
     max-width: 100%;
     height: auto;
 }
@@ -242,7 +243,6 @@ h6 {
 }
 
 .gallery-img img {
-
     max-width: 100%;
     width: 36rem;
     height: 25rem;
@@ -306,3 +306,87 @@ table thead, table tfoot {
     background-color: var(--cinza02);
     text-align: center;
 }
+
+/*CONTACT*/
+#contact {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+#contact-box-um, #contact-box-dois {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#contact-box-dois img, #contact-box-dois svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+#bar {
+    margin: auto;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--cinza01);
+}
+
+.bar-fill {
+    display: none;
+}
+
+#prog-25 {
+    width: 25%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--laranja01);
+}
+
+#prog-50 {
+    margin-top: -2rem;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--laranja01);
+}
+
+#prog-75 {
+    margin-top: -2rem;
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--laranja01);
+}
+
+#prog-100 {
+    margin-top: -2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--laranja01);
+}
+
+.progress-active {
+    display: block;
+}
+
+/*#contact {
+    max-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+/*#ses-contact-2 {
+    box-shadow: none;
+}*/
