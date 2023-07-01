@@ -464,3 +464,25 @@ footer a {
 footer a:hover {
     color: var(--azul01);
 }
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;    
+    width: 5rem;
+    height: 5rem;
+    background: var(--corbase);
+    color: white;
+    border-radius: 50%;
+    transform: rotate(270deg);
+    border: 0.1rem solid white;
+    opacity: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.back-to-top:hover{
+    opacity: 100%;
+}
