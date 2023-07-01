@@ -83,7 +83,8 @@ h6 {
     color: white;
 }
 
-.maincontainer h2, .whitecontainer h2 {
+.maincontainer h2,
+.whitecontainer h2 {
     padding: 5rem 0;
 }
 
@@ -162,7 +163,7 @@ h6 {
 }
 
 .box-um {
-    max-width: 450px;
+    max-width: 45rem;
     padding-right: 2rem;
     text-align: left;
 }
@@ -183,7 +184,7 @@ h6 {
     height: auto;
 }
 
-#ses-top3-1 {
+#ses-top3 {
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -192,11 +193,11 @@ h6 {
     text-align: center;
 }
 
-#top3-1 p {
+#top3 p {
     padding-bottom: 4rem;
 }
 
-.top3-2 {
+.rec-work {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -235,7 +236,7 @@ h6 {
 }
 
 #gallery h2 {
-    padding-bottom: 2rem; 
+    padding-bottom: 2rem;
 }
 
 #gallery p {
@@ -287,7 +288,7 @@ h6 {
 }
 
 table {
-    min-width: 360px;
+    min-width: 36rem;
     width: 100%;
     border-collapse: collapse;
 }
@@ -298,21 +299,23 @@ table caption {
     font-style: italic;
 }
 
-table td, table th {
+table td,
+table th {
     white-space: nowrap;
     border: 0.2rem solid var(--cinza02);
     padding: 1rem 2rem;
     text-align: left;
 }
 
-table thead, table tfoot {
+table thead,
+table tfoot {
     padding: 0.8rem;
     background-color: var(--cinza02);
     text-align: center;
 }
 
 /*CONTACT*/
-    /*Primeira tela*/
+/*Primeira tela*/
 #contact {
     position: relative;
     display: grid;
@@ -321,26 +324,28 @@ table thead, table tfoot {
     min-height: 100vh;
 }
 
-#contact-box-um, #contact-box-dois {
+#contact-box-um,
+#contact-box-dois {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-#contact-box-dois img, #contact-box-dois svg {
+#contact-box-dois img,
+#contact-box-dois svg {
     max-width: 100%;
     height: auto;
 }
 
-    /*Segunda tela*/
+/*Segunda tela*/
 
-    /*barra de preenchimento*/
+/*barra de preenchimento*/
 #bar {
     margin: auto;
     margin-bottom: 1.5rem;
     width: 100%;
     height: 2.5rem;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: var(--cinza03);
 }
 
@@ -355,7 +360,7 @@ table thead, table tfoot {
 #prog-25 {
     width: 25%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: var(--laranja01);
 }
 
@@ -363,7 +368,7 @@ table thead, table tfoot {
     margin-top: -2.5rem;
     width: 50%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: var(--laranja01);
 }
 
@@ -371,7 +376,7 @@ table thead, table tfoot {
     margin-top: -2.5rem;
     width: 75%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: var(--laranja01);
 }
 
@@ -379,12 +384,13 @@ table thead, table tfoot {
     margin-top: -2.5rem;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: var(--laranja01);
 }
-    /*Fim da barra de preenchimento*/
 
-    /*formulário de contato*/
+/*Fim da barra de preenchimento*/
+
+/*formulário de contato*/
 .contact-form {
     grid-column: span 2;
 }
@@ -402,15 +408,17 @@ table thead, table tfoot {
     padding: 3rem;
 }
 
-.form-group {   
+.form-group {
     padding: 0.5rem;
 }
 
-.form-group textarea, .form-group input {
+.form-group textarea,
+.form-group input {
     width: 100%;
     padding: 1.5rem 2rem;
     border: none;
     background-color: white;
+    font-size: 2rem;
 }
 
 .form-group label {
@@ -424,5 +432,26 @@ table thead, table tfoot {
     background-color: transparent;
     color: white;
     font-size: 2rem;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
 
+#form fieldset button:hover {
+    background-color: white;
+    color: var(--corbase);
+}
+
+footer {
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: var(--azul01);
 }
