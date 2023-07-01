@@ -105,6 +105,11 @@ h6 {
 }
 
 /*MENU*/
+
+.close-menu {
+ display: none;
+}
+
 #menu {
     background-color: white;
     position: fixed;

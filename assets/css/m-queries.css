@@ -26,6 +26,51 @@
     .gallery-img img {
         min-width: 100%;
     }
+
+    #menu {
+        display: none;
+        bottom: 0;
+        text-align: center;
+
+    }
+
+    .menu-content, .menu-content ul {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        height: 100vh;
+    }
+
+    .menu-content ul li {
+        margin-bottom: 4rem;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background-color: var(--corbase);
+        color: white;
+        padding: 0.1rem;
+        border-radius: 0.5rem;
+        font-size: 4rem;
+        line-height: 4rem;
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~#menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
 }
 
 @media (max-width: 600px){
