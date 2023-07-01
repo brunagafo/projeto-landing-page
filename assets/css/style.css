@@ -71,7 +71,7 @@ h6 {
 
 /*SESSÕES*/
 .sessao {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -158,8 +158,9 @@ h6 {
 #intro {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    max-height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 8rem;
 }
 
 .box-um {
@@ -174,7 +175,8 @@ h6 {
 }
 
 .box-dois {
-    width: 60rem;
+    width: auto;
+    max-width: 60rem;
     padding-left: 2rem;
     text-align: left;
 }
@@ -202,7 +204,7 @@ h6 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid {
@@ -264,13 +266,13 @@ h6 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #ses-pricing {
     display: flex;
-    height: 100vh;
-    max-width: 70rem;
+    min-height: 100vh;
+    max-width: 60rem;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 3rem;
@@ -283,6 +285,8 @@ h6 {
 }
 
 #responsive-table {
+    width: auto;
+    max-width: 60rem;
     overflow: hidden;
     overflow-x: scroll;
 }

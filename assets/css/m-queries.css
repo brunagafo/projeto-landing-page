@@ -1,0 +1,43 @@
+@media (max-width: 850px){
+    #intro {
+        flex-flow: column wrap;
+        gap: 5rem;
+    }
+
+    .box-dois{
+        width: auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+    }
+    
+    #gallery {
+        width: 100%;
+    }
+
+    #gallery > .grid {
+        margin-right: 10rem;
+        margin-left: 10rem;
+    }
+
+    .gallery-img img {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+
+    #gallery > .grid {
+        margin: auto;
+    }
+    
+    #responsive-table {
+        overflow: auto;
+        width: 100%;
+    }
+
+
+}
